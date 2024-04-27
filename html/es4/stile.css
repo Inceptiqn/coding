@@ -1,0 +1,44 @@
+body{
+    background-color: white;
+}
+
+#contents {
+    max-width: 400px;
+    background: aqua;
+    margin: auto;
+    padding: 30px;
+}
+
+#uno {
+    background-color: yellow; 
+    height: 100px;
+    max-width: 430px;
+    border: rgb(34, 177, 76) solid 25px;
+}
+
+#due {
+    background-color: red;
+    height: 200px;
+    max-width: 430px;
+    margin: 25px;
+}
+
+#tre {
+    max-width: 100px;
+    height: 100px;
+    background-color: orange;
+    border-left: 150px;
+    border-right: 150px;
+    border-top: 50px;
+    border-bottom: 50px;
+    border-style: solid;
+    border-color: #ffffff;
+}
+
+#quattro {
+  max-width: 100px;
+  height: 100px;
+  background-color: orange;
+  margin-left: 150px;
+  margin-top: 50px;
+}

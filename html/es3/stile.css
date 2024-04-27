@@ -1,0 +1,35 @@
+body{
+    background-color: aqua;
+}
+
+#Image{
+    border-style: solid;
+    border-color: black;
+    width: 600px;
+    height: auto;
+}
+
+#firstBox{
+    border-style: solid;
+    border-color: black;
+    width: 600px;
+    background-color: lime;
+}
+
+#titoloBox1{
+    font-style: italic;
+}
+
+#secondBox{
+    border-style: solid;
+    border-color: black;
+    width: 600px;
+    background-color: cadetblue;
+}
+
+#thirdBox{
+    border-style: solid;
+    border-color: palevioletred;
+    width: 600px;
+    background-color: white;
+}

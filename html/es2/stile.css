@@ -1,0 +1,23 @@
+p{
+    color: red;
+}
+
+h1, h2{
+    color: green;
+    font-family: JetBrains Mono;
+    font-style: italic;
+}
+
+p{
+    color: blue;
+}
+
+#par1{
+    color: magenta;
+    font-family: JetBrains Mono;
+}
+
+.tc{
+    font-weight: bold;
+    font-family: JetBrains Mono;
+}

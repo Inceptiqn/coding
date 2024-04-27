@@ -1,0 +1,22 @@
+titolo scheda
+<title>Pincopallo</title>
+
+
+main
+<body>
+</body>
+
+
+lista con pallini
+<ul>
+        <li>Pane</li>
+        <li>Pasta</li>
+        <li>Zucchero</li>
+        <li>Pane</li>
+</ul>
+
+<h1> header </h1>
+<h2> sottotitolo </h2>
+<p> Paragrafo</p>
+
+<!-- commento -->

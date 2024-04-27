@@ -1,0 +1,35 @@
+body{
+    background-color: white;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto;
+    background-color: yellow;
+    gap: 25px;
+    padding: 25px;
+}
+
+.grid-container > div {
+    background-color: 	#90EE90;
+    font-size: 30px;
+    padding: 25px;
+}
+
+@media only screen and (min-width: 600px) {
+    .grid-container {
+        grid-template-columns: auto auto auto;
+    }
+    #g1{
+        grid-column: 1 / 4;
+    }
+    #g2{
+        grid-column: 1 / 2;
+    }
+    #g3{
+        grid-column: 2 / 4;
+    }
+    #g4{
+        grid-column: 1 / 4;
+    }
+}
