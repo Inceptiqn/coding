@@ -1,61 +1,46 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
-
-void caricaTabella(infodipendenti tab[], int &n);
-void caricaTabella(infodipendenti tab[], int &n, int soglia);
-void stampa(infodipendenti rec);
-
-
-struct infodipendenti{
-    string cognome;
-    string nome;
-    int eta;
-    float stipendio;
-};
-
-
-
+//Alessandro Aceti 3BI
 int main()
 {
-    const int dim=10;
-    int n;
-    infodipendenti tab[dim];
-}
-
-
-void caricaTabella(infodipendenti tab[], int &n)
+const int dim = 100;
+int primo[dim];
+int secondo[dim];
+int input;
+int k;
+int n = 0;
+int conto = 0;
+for (int i = 0; i < dim; i++)
 {
-    for (int i = 0; i < n; i++)
+    cout << "Inserisci il primo numero\n";
+    cin >> input;
+    if (input == 0)
     {
-        cout << "Cognome ";
-        cin >> tab[i].cognome;
-        cout << "nome ";
-        cin >> tab[i].nome;  
-        cout << "eta ";
-        cin >> tab[i].eta;
-        cout << "stipendio ";
-        cin >> tab[i].stipendio;     
+        i = dim + 1;
     }
-    
-}
-
-
-void caricaTabella(infodipendenti tab[], int &n, int soglia)
-{
-    for (int i = 0; i < n; i++)
+    else
     {
-        if (tab[i].eta < soglia)
+        primo[i] = input;
+        cout << "Inserisci il secondo numero\n";
+        cin >> input;
+        if (input == 0)
         {
-            stampa(tab[i]);
+            i = dim + 1;
         }
-        
+        else
+        {
+            secondo[i] = input;
+            n += 1;
+        }
     }
 }
-
-void stampa(infodipendenti rec)
-{
-    cout << rec.cognome << endl;
-    cout << rec.nome << endl;
-    cout << rec.eta << endl;
-    cout << rec.stipendio << endl;
+cout << "Inserisci la costante K: ";
+cin >> k;
+for(int i = 0; i < n; i++){
+    if((primo[i] * secondo[i]) % k == 0){
+                conto += 1;
+    }
+}
+cout << "I Multipli di K sono " <<conto;
+return 0;
 }
